@@ -1,0 +1,9 @@
+name: workflow2
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - user: actions/checkout@v3 
+      - name: disploy Text
+        run: echo "hello"
